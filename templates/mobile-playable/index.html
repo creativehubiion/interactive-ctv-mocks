@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Moved · iion creative mocks</title>
+<script>
+// interactive-ctv-mocks moved to creative-mocks (2026-10-08). Map the old path to the new one; keep ?query and #hash.
+(function () {
+  var NEW = 'https://creativehubiion.github.io/creative-mocks';
+  var MAP = [
+    ['/burger-king/', '/ctv/burger-king/'],
+    ['/guzman-y-gomez/', '/ctv/guzman-y-gomez/'],
+    ['/shrek-5-x7q2/', '/ctv/shrek-5-x7q2/'],
+    ['/employment-hero-hybrid/', '/hybrid/employment-hero/'],
+    ['/marrybrown-k4q9/', '/playable/marrybrown-k4q9/'],
+    ['/templates/mobile-hybrid/', '/hybrid/_template/'],
+    ['/templates/mobile-playable/', '/playable/_template/'],
+    ['/shared/', '/shared/']
+  ];
+  var p = location.pathname.replace(/^\/interactive-ctv-mocks/, '') || '/';
+  if (!/\/$/.test(p) && !/\.[a-z0-9]+$/i.test(p)) p += '/';
+  var to = NEW + '/';
+  for (var i = 0; i < MAP.length; i++) if (p.indexOf(MAP[i][0]) === 0) { to = NEW + MAP[i][1] + p.slice(MAP[i][0].length); break; }
+  location.replace(to + location.search + location.hash);
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://creativehubiion.github.io/creative-mocks/"></noscript>
+</head>
+<body style="background:#f5f5f7;font:15px -apple-system,Segoe UI,Arial,sans-serif;color:#6e6e73;display:grid;place-items:center;height:100vh;margin:0">
+<p>This page has moved to <a href="https://creativehubiion.github.io/creative-mocks/">creativehubiion.github.io/creative-mocks</a>.</p>
+</body>
+</html>
